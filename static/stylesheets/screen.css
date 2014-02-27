@@ -147,6 +147,13 @@ select {
 }
 
 /* line 94, ../sass/screen.scss */
+textarea {
+  border-radius: 0px !important;
+  font-family: "Hammersmith One", sans-serif;
+  resize: none;
+}
+
+/* line 100, ../sass/screen.scss */
 .btn {
   border-radius: 0px !important;
   background-color: #f4412f;
@@ -159,44 +166,44 @@ select {
   -o-transition-duration: 1s;
   transition-duration: 1s;
 }
-/* line 102, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .btn:hover {
   background-color: #282829;
   color: #fff;
 }
 
-/* line 108, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .clickForRegister {
   color: #f4412f !important;
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 .container {
   padding-top: 70px;
   padding-bottom: 10px;
   max-width: auto;
 }
 
-/* line 118, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .formularioSeleccion {
   padding: 10px;
   margin: 0 auto;
 }
 
-/* line 123, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .footer {
   max-width: auto;
   margin: 0 auto;
   padding: 10px;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 .footer .logo {
   max-height: 100px;
   margin: 0 auto;
 }
 
-/* line 134, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 .modalLogin {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -205,20 +212,20 @@ select {
   border-radius: 0px;
 }
 
-/* line 138, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .tituloPagina {
   font-family: "Allura", cursive;
   color: #f55f2a !important;
   font-size: 30px;
-  font-weight: 800;
+  font-weight: 400;
 }
 
-/* line 145, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 .separate {
   height: 10px;
 }
 
-/* line 150, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 .homeImage {
   background-image: url(../../static/img/fondo.jpg);
   -webkit-background-size: cover;
@@ -230,7 +237,7 @@ select {
   z-index: 1;
 }
 
-/* line 158, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 .homeFormulario {
   position: absolute;
   z-index: 1000;
@@ -238,34 +245,34 @@ select {
   left: 15%;
 }
 
-/* line 165, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 .titleOfHome {
   font-size: 40px;
   padding-bottom: 10px;
   color: #ccccc;
 }
 
-/* line 173, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 #registroComercio h1 {
   padding-top: 25px;
   padding-bottom: 10px;
   color: #ccccc;
 }
-/* line 178, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 #registroComercio h2 {
   padding-bottom: 10px;
   font-size: 25px;
 }
-/* line 182, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 #registroComercio li {
   list-style-type: circle;
   line-height: 20px;
 }
-/* line 186, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 #registroComercio p {
   line-height: 28px;
 }
-/* line 189, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 #registroComercio label {
   padding-bottom: 10px;
 }

@@ -4,7 +4,30 @@
 {% block content %}
 
 <div class="container">
-	Pagina Contacto
+	
+	<h1>Contacto</h1>
+	<div class="separate"></div>
+	<div class="row">
+		<form action="" role="form">
+			<div class="col-xs-12 col-sm-6">
+				<div class="form-group">
+					<label for="nombre" class="hidden">Nombre</label>
+					<input type="text" class="form-control" placeholder="Nombre">
+				</div>
+				<div class="form-group"><label for="email" class="hidden">Email</label><input type="text" class="form-control" placeholder="Correo electrónico"></div>
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<div class="form-group"><label for="mensaje" class="hidden">Mensaje</label>
+				<textarea name="" id="" class="form-control" cols="30" rows="3" placeholder="Mensaje"></textarea>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<button type="submit" class="btn btn-default btn-block">Enviar</button>
+			</div>
+			
+		</form>
+	</div>
+
 </div>
 
 {% endblock %}

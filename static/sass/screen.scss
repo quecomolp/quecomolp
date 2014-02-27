@@ -8,7 +8,7 @@
 
 // Variables
 $colorTituloPagina: #F55F2A;
-$pesoTituloPagina: 800;
+$pesoTituloPagina: 400;
 $tamanoTitulo: 30px;
 $colorTexto: #252525;
 $tamanoMaxPagina: auto;
@@ -91,6 +91,12 @@ select {
 	font-family: $tipografiaTitulosyFormularios;
 }
 
+textarea {
+	border-radius: 0px !important;
+	font-family: $tipografiaTitulosyFormularios;
+	resize: none;
+}
+
 .btn {
 	border-radius: 0px !important;
 	background-color: $hoverSobreLinks;
@@ -145,6 +151,7 @@ select {
 .separate {
 	height: 10px;
 }
+
 
 //Home
 .homeImage{
