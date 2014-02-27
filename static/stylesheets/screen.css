@@ -278,8 +278,19 @@ textarea {
 #registroComercio label {
   padding-bottom: 10px;
 }
+/* line 201, ../sass/screen.scss */
+#registroComercio .barraImagen {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  min-height: 100px;
+  background-image: url(../../static/img/banner2.jpg);
+}
 
-/* line 205, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 #contacto .genteBar {
   -webkit-background-size: cover;
   -moz-background-size: cover;

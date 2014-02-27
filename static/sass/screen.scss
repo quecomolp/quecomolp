@@ -198,6 +198,13 @@ textarea {
  & label {
  	padding-bottom: 10px;
  }
+ & .barraImagen {
+ 	@include background-size(cover);
+ 	background-repeat: no-repeat;
+ 	background-position: center bottom;
+ 	min-height: 100px;
+ 	background-image: url(../../static/img/banner2.jpg);
+ }
 }
 
 // Pagina Contact
