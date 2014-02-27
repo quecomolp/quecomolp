@@ -3,30 +3,106 @@
 
 {% block content %}
 
-<row>
-	<div class="hidden-xs col-sm-2">
-		<h1>Forma parte de nuestra comunidad</h1>
-	</div>
-	<div class="col-xs-12 col-sm-10"></div>
-</row>
+<!-- Page header-->
+
+<!--Por que registrar sitio-->
+<h1 class="text-center">Por qué quiero registrar mi negocio?</h1>
+<ul>
+	<li>Con <b>QueComoLP</b> el restaurante incrementa el número de pedidos de delivery, ya que el local estará visible a todos los usuarios que se encuentran dentro de su área de entrega de delivery.</li>
+	<li>Publicidad online gratuita: El restaurante podrá subir fotos y descripción del mismo.</li>
+	<li>Dispone de reportes estadísticos de su comercio.</li>
+</ul>
+
+
+<h1 class="text-center">Quiero registrar mi negocio</h1>
 
 <!-- Formulario -->
 <form role="form">
-	<div class="row">
-		<div class="col-xs-12 col-sm-6"></div>
-		<div class="col-xs-12 col-sm-6"></div>
-	</div>	
+	
+	<hr>
 
-  <div class="form-group">
-    <label for="nombreCompania" class="hidden">Nombre Compañia</label>
-    <input type="text" class="form-control" placeholder="Nombre de la compañía">
+	<h2>Información del negocio</h2>
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-6">
+			<!-- Datos respecto del negocio y dueño -->
+			<div class="form-group">
+				<label for="nombrenegocio" class="hidden">Nombre del negocio</label>
+				<input type="text" class="form-control" placeholder="Nombre del negocio">
+			</div>
+			<div class="form-group">
+				<label for="nombrepersona" class="hidden">Nombre</label>
+				<input type="text" class="form-control" placeholder="Nombre">
+			</div>
+			<div class="form-group">
+				<label for="apellidopersona" class="hidden">Apellido</label>
+				<input type="text" class="form-control" placeholder="apellido">
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6">
+			<div class="form-group">
+				<label for="telefono" class="hidden">Telefono</label>
+				<input type="text" class="form-control" placeholder="Teléfono">
+			</div>
+			<div class="form-group">
+				<label for="email" class="hidden">Email</label>
+				<input type="text" class="form-control" placeholder="Email">
+			</div>
+			<div class="form-group">
+				<label for="direccion" class="hidden">Dirección</label>
+				<input type="text" class="form-control" placeholder="direccion">
+			</div>
+		</div>
+	</div>
+
+	<hr>
+	
+	<!-- Menues etc -->
+	<h2>Mi menu</h2>
+
+	<div class="form-group">
+		<label for="servicio_ofrecidos">Servicios que ofrezco</label>
+		<div class="checkbox">
+			<label>
+				<input type="checkbox" value="">
+				Delivery
+			</label>
+		</div>
+		<div class="checkbox">
+			<label>
+				<input type="checkbox" value="">
+				Restaurante
+			</label>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="tipo_comidas">Tipo de comidas</label>
+		<select name="" id="" class="form-control">
+			<option value="">Tipo de comidas</option>
+		</select>
+	</div>
+
+	<div class="form-group">
+		<label for="categoria_servicio">Categoria de mi servicio</label>
+		<select name="" id="" class="form-control">
+			<option value="una_estrella">★</option>
+			<option value="dos_estrella">★★</option>
+			<option value="tres_estrella">★★★</option>
+			<option value="cuatro_estrella">★★★★</option>
+			<option value="cinco_estrella">★★★★★</option>
+			<option value="seis_estrella">★★★★★★</option>
+		</select>
+	</div>
+
+	<div class="form-group">
+    <label for="inputfile">Subi imagenes</label>
+    <input type="file">
   </div>
-  <div class="form-group">
-    <label for="nombreCompania" class="hidden">Nombre Compañia</label>
-    <input type="text" class="form-control" placeholder="Nombre de la compañía">
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
+  
+</div>
+  <button type="submit" class="btn btn-default btn-block">Submit</button>
+</form><div></div>
 
 
 {% endblock %}
