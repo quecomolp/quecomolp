@@ -55,6 +55,10 @@ h1 {
 	font-size: 30px;
 }
 
+h4 {
+	font-size: 25px;
+}
+
 input {
 	border-radius: 0px !important;
 	text-transform: uppercase;
@@ -92,6 +96,8 @@ select {
 	background-color: $hoverSobreLinks;
 	color: $colorFondoPagina;
 	border:none;
+	font-family: $tipografiaTitulosyFormularios;
+	text-transform: uppercase;
 	@include transition-duration(1s);
 	&:hover{
 		background-color: #282829;
@@ -136,6 +142,10 @@ select {
 	font-weight: $pesoTituloPagina;
 }
 
+.separate {
+	height: 10px;
+}
+
 //Slider
 .cycle-slideshow { 
 	width: 100% 
@@ -148,29 +158,23 @@ select {
 
 //Registro del comercio
 #registroComercio {
-
-}
-
-#registroComercio h1 {
-	padding-top: 25px;
+ & h1{
+ 	padding-top: 25px;
 	padding-bottom: 10px;
 	color: #ccccc;
-}
-
-#registroComercio h2 {
-	padding-bottom: 10px;
+ }
+ & h2{
+ 	padding-bottom: 10px;
 	font-size: 25px;
-}
-
-#registroComercio li{
-	list-style-type: circle;
+ }
+ & li{
+ 	list-style-type: circle;
 	line-height: 20px;
-}
-
-#registroComercio p{
-	line-height: 28px;
-}
-
-#registroComercio label {
-	padding-bottom: 10px;
+ }
+ & p{
+ 	line-height: 28px;
+ }
+ & label {
+ 	padding-bottom: 10px;
+ }
 }

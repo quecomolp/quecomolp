@@ -105,19 +105,24 @@ h1 {
 }
 
 /* line 58, ../sass/screen.scss */
+h4 {
+  font-size: 25px;
+}
+
+/* line 62, ../sass/screen.scss */
 input {
   border-radius: 0px !important;
   text-transform: uppercase;
   font-family: "Hammersmith One", sans-serif;
 }
 
-/* line 64, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 p {
   font-family: "Varela Round", sans-serif;
   color: #252525;
 }
 
-/* line 69, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 nav {
   max-width: 1170px;
   margin: 0 auto;
@@ -125,7 +130,7 @@ nav {
   border-bottom: 2px solid #d8476a !important;
 }
 
-/* line 76, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 footer {
   border-top: 2px solid #d8476a;
   background-color: #f1f1f1;
@@ -135,61 +140,63 @@ footer {
   height: 214px;
 }
 
-/* line 85, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 select {
   border-radius: 0px !important;
   font-family: "Hammersmith One", sans-serif;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .btn {
   border-radius: 0px !important;
   background-color: #f4412f;
   color: white;
   border: none;
+  font-family: "Hammersmith One", sans-serif;
+  text-transform: uppercase;
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
   -o-transition-duration: 1s;
   transition-duration: 1s;
 }
-/* line 96, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 .btn:hover {
   background-color: #282829;
   color: #fff;
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .clickForRegister {
   color: #f4412f !important;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 .container {
   padding-top: 70px;
   padding-bottom: 10px;
   max-width: 1170px;
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 .formularioSeleccion {
   padding: 10px;
   margin: 0 auto;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .footer {
   max-width: 1170px;
   margin: 0 auto;
   padding: 10px;
 }
 
-/* line 123, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .footer .logo {
   max-height: 100px;
   margin: 0 auto;
 }
 
-/* line 128, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .modalLogin {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -198,7 +205,7 @@ select {
   border-radius: 0px;
 }
 
-/* line 132, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 .tituloPagina {
   font-family: "Allura", cursive;
   color: #f55f2a !important;
@@ -206,42 +213,43 @@ select {
   font-weight: 800;
 }
 
-/* line 140, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
+.separate {
+  height: 10px;
+}
+
+/* line 150, ../sass/screen.scss */
 .cycle-slideshow {
   width: 100%;
 }
 
-/* line 144, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 .cycle-slideshow img {
   width: 100%;
   max-height: 300px;
 }
 
-/* line 154, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 #registroComercio h1 {
   padding-top: 25px;
   padding-bottom: 10px;
   color: #ccccc;
 }
-
-/* line 160, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 #registroComercio h2 {
   padding-bottom: 10px;
   font-size: 25px;
 }
-
-/* line 165, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 #registroComercio li {
   list-style-type: circle;
   line-height: 20px;
 }
-
-/* line 170, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 #registroComercio p {
   line-height: 28px;
 }
-
-/* line 174, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 #registroComercio label {
   padding-bottom: 10px;
 }
