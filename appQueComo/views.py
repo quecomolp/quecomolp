@@ -5,3 +5,6 @@ def index (request):
 
 def registro (request):
 	return render_to_response('default/register.html')
+
+def contacto (request):
+	return render_to_response('default/contact.html')
