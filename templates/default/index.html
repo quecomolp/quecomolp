@@ -3,49 +3,47 @@
 
 {% block extraHead %}
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="http://malsup.github.com/jquery.cycle2.js"></script>
-
 {% endblock %}
 
 
 {% block content %}
 
-<!--Slider-->
-<div class="cycle-slideshow">
-	<img src="{% static "img/banner1.jpg" %}" alt="">
-	<img src="{% static "img/banner2.jpg" %}" alt="">
-	<img src="{% static "img/banner3.jpg" %}" alt="">
+<div class="homeImage">
+  <div class="formularioSeleccion text-center homeFormulario">
+    <h1 class="text-center titleOfHome">Bares, Restaurant, Delivery</h1>
+    <p class="small text-center">Todo lo que buscas lo podes encontrar en Que Como La Plata</p>
+    <div class="separate"></div>
+    <form class="form-inline" role="form">
+      <div class="form-group">
+        <label class="sr-only hidden" for="">Direccion</label>
+        <input type="text" class="form-control input-lg" id="exampleInputEmail2" placeholder="Direccion">
+      </div>
+      <div class="form-group">
+        <label class="sr-only hidden" for="">Barrio</label>
+        <select name="" id="" class="form-control input-lg">
+          <option value="">Barrio</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="">Que tenes ganas de hacer</label>
+        <select name="" id="" class="form-control input-lg">
+          <option value="">Salir a comer</option>
+          <option>Pedir delivery</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="">Categoria</label>
+        <select name="" id="" class="form-control input-lg">
+          <option value="">Cantidad estrellas</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-default btn-lg">Buscar</button>
+    </form>
+  </div>
 </div>
 
+
 <!--Formulario -->
-<div class="formularioSeleccion text-center">
-	<form class="form-inline" role="form">
-  <div class="form-group">
-    <label class="sr-only hidden" for="">Direccion</label>
-    <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Direccion">
-  </div>
-   <div class="form-group">
-    <label class="sr-only hidden" for="">Barrio</label>
-    <select name="" id="" class="form-control">
-    	<option value="">Barrio</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label class="sr-only" for="">Que tenes ganas de hacer</label>
-    <select name="" id="" class="form-control">
-    	<option value="">Salir a comer</option>
-    	<option>Pedir delivery</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label class="sr-only" for="">Categoria</label>
-    <select name="" id="" class="form-control">
-    	<option value="">Cantidad estrellas</option>
-    </select>
-  </div>
-  <button type="submit" class="btn btn-default">Buscar</button>
-</form>
-</div>
+
 
 {% endblock %}

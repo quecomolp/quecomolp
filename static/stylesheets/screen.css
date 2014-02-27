@@ -124,7 +124,7 @@ p {
 
 /* line 73, ../sass/screen.scss */
 nav {
-  max-width: 1170px;
+  max-width: auto;
   margin: 0 auto;
   background-color: white !important;
   border-bottom: 2px solid #d8476a !important;
@@ -174,7 +174,7 @@ select {
 .container {
   padding-top: 70px;
   padding-bottom: 10px;
-  max-width: 1170px;
+  max-width: auto;
 }
 
 /* line 118, ../sass/screen.scss */
@@ -185,7 +185,7 @@ select {
 
 /* line 123, ../sass/screen.scss */
 .footer {
-  max-width: 1170px;
+  max-width: auto;
   margin: 0 auto;
   padding: 10px;
 }
@@ -219,37 +219,53 @@ select {
 }
 
 /* line 150, ../sass/screen.scss */
-.cycle-slideshow {
-  width: 100%;
+.homeImage {
+  background-image: url(../../static/img/fondo.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  z-index: 1;
 }
 
-/* line 154, ../sass/screen.scss */
-.cycle-slideshow img {
-  width: 100%;
-  max-height: 300px;
+/* line 158, ../sass/screen.scss */
+.homeFormulario {
+  position: absolute;
+  z-index: 1000;
+  top: 40%;
+  left: 15%;
 }
 
-/* line 161, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
+.titleOfHome {
+  font-size: 40px;
+  padding-bottom: 10px;
+  color: #ccccc;
+}
+
+/* line 173, ../sass/screen.scss */
 #registroComercio h1 {
   padding-top: 25px;
   padding-bottom: 10px;
   color: #ccccc;
 }
-/* line 166, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 #registroComercio h2 {
   padding-bottom: 10px;
   font-size: 25px;
 }
-/* line 170, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 #registroComercio li {
   list-style-type: circle;
   line-height: 20px;
 }
-/* line 174, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 #registroComercio p {
   line-height: 28px;
 }
-/* line 177, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 #registroComercio label {
   padding-bottom: 10px;
 }

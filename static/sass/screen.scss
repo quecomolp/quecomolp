@@ -11,7 +11,7 @@ $colorTituloPagina: #F55F2A;
 $pesoTituloPagina: 800;
 $tamanoTitulo: 30px;
 $colorTexto: #252525;
-$tamanoMaxPagina: 1170px;
+$tamanoMaxPagina: auto;
 $colorFondoPagina: #fff;
 $fondoBarraNavegacion: #fff;
 $colorBordeInferiorBarraNavegacion: #D8476A;
@@ -146,14 +146,26 @@ select {
 	height: 10px;
 }
 
-//Slider
-.cycle-slideshow { 
-	width: 100% 
+//Home
+.homeImage{
+	background-image: url(../../static/img/fondo.jpg);
+	@include background-size(cover);
+	height: 600px;
+	position:relative;
+	z-index: 1;
 }
 
-.cycle-slideshow img { 
-	width: 100%; 
-	max-height: 300px;
+.homeFormulario {
+	position:absolute;
+	z-index: 1000;
+	top: 40%;
+	left: 15%;
+}
+
+.titleOfHome{
+	font-size:40px;
+	padding-bottom: 10px;
+	color: #ccccc;
 }
 
 //Registro del comercio
