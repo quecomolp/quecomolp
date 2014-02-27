@@ -23,6 +23,7 @@ $tipografiaTextos: 'Varela Round', sans-serif;
 $tipografiaTituloPrincipal: 'Allura', cursive;
 $hoverSobreLinks: #F4412F;
 $footerHeight: 214px;
+$tipografiaTitulosyFormularios: 'Hammersmith One', sans-serif;
 
 
 // Estilos
@@ -46,9 +47,14 @@ body{
 	margin-bottom: $footerHeight;
 }
 
+h1,h2,h3,h4,h5,h6 {
+	font-family: $tipografiaTitulosyFormularios;
+}
+
 input {
 	border-radius: 0px !important;
 	text-transform: uppercase;
+	font-family: $tipografiaTitulosyFormularios;
 }
 
 p {

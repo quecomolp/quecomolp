@@ -67,13 +67,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 29, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 html {
   position: relative;
   min-height: 100%;
 }
 
-/* line 34, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 a {
   font-family: "Varela Round", sans-serif;
   color: #252525;
@@ -82,31 +82,37 @@ a {
   -o-transition-duration: 1s;
   transition-duration: 1s;
 }
-/* line 38, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 a:hover {
   text-decoration: none;
   color: #f4412f !important;
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 body {
   background-color: white;
   margin-bottom: 214px;
 }
 
-/* line 49, ../sass/screen.scss */
-input {
-  border-radius: 0px !important;
-  text-transform: uppercase;
+/* line 50, ../sass/screen.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Hammersmith One", sans-serif;
 }
 
 /* line 54, ../sass/screen.scss */
+input {
+  border-radius: 0px !important;
+  text-transform: uppercase;
+  font-family: "Hammersmith One", sans-serif;
+}
+
+/* line 60, ../sass/screen.scss */
 p {
   font-family: "Varela Round", sans-serif;
   color: #252525;
 }
 
-/* line 59, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 nav {
   max-width: 1170px;
   margin: 0 auto;
@@ -114,7 +120,7 @@ nav {
   border-bottom: 2px solid #d8476a !important;
 }
 
-/* line 66, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 footer {
   border-top: 2px solid #d8476a;
   background-color: #f1f1f1;
@@ -124,12 +130,12 @@ footer {
   height: 214px;
 }
 
-/* line 75, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 select {
   border-radius: 0px !important;
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 .btn {
   border-radius: 0px !important;
   background-color: #f4412f;
@@ -140,44 +146,44 @@ select {
   -o-transition-duration: 1s;
   transition-duration: 1s;
 }
-/* line 85, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 .btn:hover {
   background-color: #282829;
   color: #fff;
 }
 
-/* line 91, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 .clickForRegister {
   color: #f4412f !important;
 }
 
-/* line 95, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .container {
   padding-top: 70px;
   padding-bottom: 10px;
   max-width: 1170px;
 }
 
-/* line 101, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 .formularioSeleccion {
   padding: 10px;
   margin: 0 auto;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 .footer {
   max-width: 1170px;
   margin: 0 auto;
   padding: 10px;
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 .footer .logo {
   max-height: 100px;
   margin: 0 auto;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .modalLogin {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -186,7 +192,7 @@ select {
   border-radius: 0px;
 }
 
-/* line 121, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 .tituloPagina {
   font-family: "Allura", cursive;
   color: #f55f2a !important;
@@ -194,12 +200,12 @@ select {
   font-weight: 800;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 .cycle-slideshow {
   width: 100%;
 }
 
-/* line 133, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .cycle-slideshow img {
   width: 100%;
   max-height: 300px;
