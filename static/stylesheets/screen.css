@@ -102,27 +102,29 @@ h1, h2, h3, h4, h5, h6 {
 /* line 54, ../sass/screen.scss */
 h1 {
   font-size: 30px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 h4 {
   font-size: 25px;
 }
 
-/* line 62, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 input {
   border-radius: 0px !important;
   text-transform: uppercase;
   font-family: "Hammersmith One", sans-serif;
 }
 
-/* line 68, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 p {
   font-family: "Varela Round", sans-serif;
   color: #252525;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 nav {
   max-width: auto;
   margin: 0 auto;
@@ -130,7 +132,7 @@ nav {
   border-bottom: 2px solid #d8476a !important;
 }
 
-/* line 80, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 footer {
   border-top: 2px solid #d8476a;
   background-color: #f1f1f1;
@@ -140,20 +142,20 @@ footer {
   height: 214px;
 }
 
-/* line 89, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 select {
   border-radius: 0px !important;
   font-family: "Hammersmith One", sans-serif;
 }
 
-/* line 94, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 textarea {
   border-radius: 0px !important;
   font-family: "Hammersmith One", sans-serif;
   resize: none;
 }
 
-/* line 100, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 .btn {
   border-radius: 0px !important;
   background-color: #f4412f;
@@ -166,44 +168,44 @@ textarea {
   -o-transition-duration: 1s;
   transition-duration: 1s;
 }
-/* line 108, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 .btn:hover {
   background-color: #282829;
   color: #fff;
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 .clickForRegister {
   color: #f4412f !important;
 }
 
-/* line 118, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .container {
   padding-top: 70px;
   padding-bottom: 10px;
   max-width: auto;
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .formularioSeleccion {
   padding: 10px;
   margin: 0 auto;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .footer {
   max-width: auto;
   margin: 0 auto;
   padding: 10px;
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .footer .logo {
   max-height: 100px;
   margin: 0 auto;
 }
 
-/* line 140, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 .modalLogin {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -212,7 +214,7 @@ textarea {
   border-radius: 0px;
 }
 
-/* line 144, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 .tituloPagina {
   font-family: "Allura", cursive;
   color: #f55f2a !important;
@@ -220,12 +222,12 @@ textarea {
   font-weight: 400;
 }
 
-/* line 151, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 .separate {
   height: 10px;
 }
 
-/* line 157, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 .homeImage {
   background-image: url(../../static/img/fondo.jpg);
   -webkit-background-size: cover;
@@ -237,7 +239,7 @@ textarea {
   z-index: 1;
 }
 
-/* line 165, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 .homeFormulario {
   position: absolute;
   z-index: 1000;
@@ -245,34 +247,46 @@ textarea {
   left: 15%;
 }
 
-/* line 172, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 .titleOfHome {
   font-size: 40px;
   padding-bottom: 10px;
   color: #ccccc;
 }
 
-/* line 180, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 #registroComercio h1 {
   padding-top: 25px;
   padding-bottom: 10px;
   color: #ccccc;
 }
-/* line 185, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 #registroComercio h2 {
   padding-bottom: 10px;
   font-size: 25px;
 }
-/* line 189, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 #registroComercio li {
   list-style-type: circle;
   line-height: 20px;
 }
-/* line 193, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 #registroComercio p {
   line-height: 28px;
 }
-/* line 196, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 #registroComercio label {
   padding-bottom: 10px;
+}
+
+/* line 205, ../sass/screen.scss */
+#contacto .genteBar {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  min-height: 100px;
+  background-image: url(../../static/img/banner1.jpg);
 }

@@ -53,6 +53,8 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
 	font-size: 30px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
 }
 
 h4 {
@@ -196,4 +198,15 @@ textarea {
  & label {
  	padding-bottom: 10px;
  }
+}
+
+// Pagina Contact
+#contacto {
+	& .genteBar{
+		@include background-size(cover);
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		min-height: 100px;
+		background-image: url(../../static/img/banner1.jpg);
+	}
 }
