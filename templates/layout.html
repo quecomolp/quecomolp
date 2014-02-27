@@ -1,0 +1,115 @@
+<!doctype html>
+{% load staticfiles %}
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Que como La Plata</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<!--Fonts-->
+	<link href='http://fonts.googleapis.com/css?family=Allura|Varela+Round' rel='stylesheet' type='text/css'>
+	<!--Styles-->
+	<link rel="stylesheet" href="{% static "stylesheets/screen.css" %}">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	{% block extraHead %}{% endblock %}
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand tituloPagina" href="{%url 'index'%}">Que como La Plata</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#" data-toggle="modal" data-target="#loginModal">Iniciar Sesión</a></li>
+					<li><a href="{%url 'registronegocio'%}">Registrar mi negocio</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<div class="container">
+		{% block content %}{% endblock %}		
+	</div>
+
+	<footer>
+		<div class="footer">
+			<img src="{% static "img/logo.png" %}" class="img-responsive logo" alt="">
+			<p class="text-center tituloPagina">Que como La Plata</p>
+			<br>
+			<!--Links de la pagina-->
+			<ul class="list-inline text-center">
+				<li><a href="" data-toggle="modal" data-target="#aboutUsModal">Sobre nosotros</a></li>
+				<li><a href="">Registrar mi negocio</a></li>
+				<li><a href="">Contacto</a></li>
+			</ul>
+			<br>
+			<!--Redes sociales-->
+			<ul class="list-inline text-center">
+				<li><a href=""><i class="fa fa-facebook-square fa-lg"></i></a></li>
+				<li><a href=""><i class="fa fa-twitter-square fa-lg"></i></a></li>
+				<li><a href=""><i class="fa fa-google-plus-square fa-lg"></i><div></div></a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Modals -->
+
+	<!--Modal for login-->
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content modalLogin">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title text-center" id="myModalLabel">Iniciar sesión</h4>
+				</div>
+				<div class="modal-body">
+					<form role="form">
+						<div class="form-group">
+							<label class="hidden" for="exampleInputEmail1">Email</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Dirección correo">
+						</div>
+						<div class="form-group">
+							<label class="hidden" for="exampleInputPassword1">Password</label>
+							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+						</div>
+						<button type="submit" class="btn btn-default btn-block">Ingresar</button>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<p class="text-center small">Si todavía no estas registrado <a href="" class="clickForRegister">hace click aquí</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal for about us -->
+	<div class="modal fade" id="aboutUsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content modalLogin">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title text-center" id="myModalLabel">Sobre nosotros</h4>
+				</div>
+				<div class="modal-body">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, illum soluta eos quis ipsam labore nesciunt impedit architecto cumque sapiente autem iste voluptas cum quibusdam dolore minus nihil enim explicabo assumenda ullam! Molestiae, dicta veniam doloremque cupiditate corporis placeat quis excepturi obcaecati blanditiis consectetur tempora eos culpa atque non earum expedita maiores velit similique quibusdam est. A, ea libero similique ex natus! Aperiam, hic, cumque mollitia quae nihil aut sequi et quaerat id corporis consectetur nostrum repudiandae eum iusto repellendus saepe error aliquam molestias cupiditate non perferendis praesentium dolorum eaque facilis magni? Rerum, animi, at minus commodi impedit earum accusantium tenetur iusto quaerat repellat quidem dicta voluptates minima nulla facere voluptas quisquam nam fugiat nisi illum! Veritatis, iure, deserunt provident voluptatum commodi eaque ex dolor harum tempora ut suscipit voluptatem nobis incidunt aperiam consequuntur quas vero. Alias quos vitae laboriosam odit ducimus tempora consectetur eum nisi sint facere. Velit, quibusdam, unde esse magnam debitis est odit reiciendis ipsum amet consequatur repellat porro perspiciatis sed accusamus pariatur. Officia, accusantium sapiente velit hic odit ea sit voluptatibus praesentium ab delectus adipisci cupiditate dolores autem veritatis nemo error laboriosam architecto sint. Inventore, nulla veritatis omnis explicabo cum quam reprehenderit officia eum tempore esse.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</body>
+</html>

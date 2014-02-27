@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+<row>
+	<div class="hidden-xs col-sm-2">
+		<h1>Forma parte de nuestra comunidad</h1>
+	</div>
+	<div class="col-xs-12 col-sm-10"></div>
+</row>
+
+<!-- Formulario -->
+<form role="form">
+	<div class="row">
+		<div class="col-xs-12 col-sm-6"></div>
+		<div class="col-xs-12 col-sm-6"></div>
+	</div>	
+
+  <div class="form-group">
+    <label for="nombreCompania" class="hidden">Nombre Compañia</label>
+    <input type="text" class="form-control" placeholder="Nombre de la compañía">
+  </div>
+  <div class="form-group">
+    <label for="nombreCompania" class="hidden">Nombre Compañia</label>
+    <input type="text" class="form-control" placeholder="Nombre de la compañía">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+
+{% endblock %}
