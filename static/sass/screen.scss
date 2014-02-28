@@ -20,11 +20,18 @@ $colorBackgroundFooter : #F1F1F1;
 $elementoCentrado: 0 auto;
 $espacioEntreBordes: 10px;
 $tipografiaTextos: 'Varela Round', sans-serif;
-$tipografiaTituloPrincipal: 'Allura', cursive;
+$tipografiaTituloMarca: 'Allura', cursive;
+$tipografiaTituloPrincipal: 'Bebas Neue Regular';
 $hoverSobreLinks: #F4412F;
 $footerHeight: 214px;
 $tipografiaTitulosyFormularios: 'Hammersmith One', sans-serif;
+$tipografiaBarraNavegacion: "Bebas Neue Regular";
 
+// Fonts
+@include font-face("Bebas Neue Regular", font-files("../../static/fonts/ttf/BebasNeueRegular.ttf", "../../static/fonts/ttf/BebasNeue_
+	Regular.otf"));
+@include font-face("Bebas Neue Book", font-files("../../static/fonts/ttf/BebasNeueBook.ttf", "../../static/fonts/ttf/BebasNeue_
+	Book.otf"));
 
 // Estilos
 html {
@@ -77,6 +84,16 @@ nav {
 	margin: 0 auto;
 	background-color: $fondoBarraNavegacion !important;
 	border-bottom: 2px solid $colorBordeInferiorBarraNavegacion !important;
+	& a {
+		font-family: $tipografiaBarraNavegacion;
+		font-size: 18px;
+	}
+	& .tituloPagina {
+		font-family: $tipografiaTituloPrincipal !important;
+		color: $colorTituloPagina !important;
+		font-size: $tamanoTitulo;
+		font-weight: $pesoTituloPagina;
+	}
 }
 
 footer {
@@ -86,6 +103,19 @@ footer {
 	bottom: 0;
 	width: 100%;
 	height: $footerHeight;
+	& .footer {
+		max-width: $tamanoMaxPagina;
+		margin: $elementoCentrado;
+		padding: $espacioEntreBordes;
+	}
+	& .footer .logo{
+		max-height: 100px;
+		margin: $elementoCentrado;
+	}
+	& a {
+		font-family: $tipografiaBarraNavegacion;
+		font-size: 18px;
+	}
 }
 
 select {
@@ -128,26 +158,8 @@ textarea {
 	margin: $elementoCentrado;
 }
 
-.footer {
-	max-width: $tamanoMaxPagina;
-	margin: $elementoCentrado;
-	padding: $espacioEntreBordes;
-}
-
-.footer .logo{
-	max-height: 100px;
-	margin: $elementoCentrado;
-}
-
 .modalLogin {
 	@include border-radius(0px)
-}
-
-.tituloPagina {
-	font-family: $tipografiaTituloPrincipal;
-	color: $colorTituloPagina !important;
-	font-size: $tamanoTitulo;
-	font-weight: $pesoTituloPagina;
 }
 
 .separate {
@@ -199,21 +211,15 @@ textarea {
  	padding-bottom: 10px;
  }
  & .barraImagen {
- 	@include background-size(cover);
- 	background-repeat: no-repeat;
- 	background-position: center bottom;
  	min-height: 100px;
- 	background-image: url(../../static/img/banner2.jpg);
+ 	background-image: url(../../static/img/guglieri-speciale.jpg);
  }
 }
 
 // Pagina Contact
 #contacto {
 	& .genteBar{
-		@include background-size(cover);
-		background-repeat: no-repeat;
-		background-position: center bottom;
 		min-height: 100px;
-		background-image: url(../../static/img/banner1.jpg);
+		background-image: url(../../static/img/naranjas.png);
 	}
 }

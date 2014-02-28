@@ -67,13 +67,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 30, ../sass/screen.scss */
+@font-face {
+  font-family: "Bebas Neue Regular";
+  src: url('/stylesheets/fonts/../../static/fonts/ttf/BebasNeueRegular.ttf') format('truetype'), url('/stylesheets/fonts/../../static/fonts/ttf/BebasNeue_ Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Bebas Neue Book";
+  src: url('/stylesheets/fonts/../../static/fonts/ttf/BebasNeueBook.ttf') format('truetype'), url('/stylesheets/fonts/../../static/fonts/ttf/BebasNeue_ Book.otf') format('opentype');
+}
+
+/* line 37, ../sass/screen.scss */
 html {
   position: relative;
   min-height: 100%;
 }
 
-/* line 35, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 a {
   font-family: "Varela Round", sans-serif;
   color: #252525;
@@ -82,57 +92,69 @@ a {
   -o-transition-duration: 1s;
   transition-duration: 1s;
 }
-/* line 39, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 a:hover {
   text-decoration: none;
   color: #f4412f !important;
 }
 
-/* line 45, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 body {
   background-color: white;
   margin-bottom: 214px;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Allura", cursive;
+  font-family: "Bebas Neue Regular";
 }
 
-/* line 54, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 h1 {
   font-size: 30px;
   border-bottom: 1px solid #ccc;
   margin-bottom: 10px;
 }
 
-/* line 60, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 h4 {
   font-size: 25px;
 }
 
-/* line 64, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 input {
   border-radius: 0px !important;
   text-transform: uppercase;
   font-family: "Hammersmith One", sans-serif;
 }
 
-/* line 70, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 p {
   font-family: "Varela Round", sans-serif;
   color: #252525;
 }
 
-/* line 75, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 nav {
   max-width: auto;
   margin: 0 auto;
   background-color: white !important;
   border-bottom: 2px solid #d8476a !important;
 }
+/* line 87, ../sass/screen.scss */
+nav a {
+  font-family: "Bebas Neue Regular";
+  font-size: 18px;
+}
+/* line 91, ../sass/screen.scss */
+nav .tituloPagina {
+  font-family: "Bebas Neue Regular" !important;
+  color: #f55f2a !important;
+  font-size: 30px;
+  font-weight: 400;
+}
 
-/* line 82, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 footer {
   border-top: 2px solid #d8476a;
   background-color: #f1f1f1;
@@ -141,21 +163,37 @@ footer {
   width: 100%;
   height: 214px;
 }
+/* line 106, ../sass/screen.scss */
+footer .footer {
+  max-width: auto;
+  margin: 0 auto;
+  padding: 10px;
+}
+/* line 111, ../sass/screen.scss */
+footer .footer .logo {
+  max-height: 100px;
+  margin: 0 auto;
+}
+/* line 115, ../sass/screen.scss */
+footer a {
+  font-family: "Bebas Neue Regular";
+  font-size: 18px;
+}
 
-/* line 91, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 select {
   border-radius: 0px !important;
   font-family: "Hammersmith One", sans-serif;
 }
 
-/* line 96, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 textarea {
   border-radius: 0px !important;
   font-family: "Hammersmith One", sans-serif;
   resize: none;
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 .btn {
   border-radius: 0px !important;
   background-color: #f4412f;
@@ -168,44 +206,31 @@ textarea {
   -o-transition-duration: 1s;
   transition-duration: 1s;
 }
-/* line 110, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 .btn:hover {
   background-color: #282829;
   color: #fff;
 }
 
-/* line 116, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 .clickForRegister {
   color: #f4412f !important;
 }
 
-/* line 120, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 .container {
   padding-top: 70px;
   padding-bottom: 10px;
   max-width: auto;
 }
 
-/* line 126, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 .formularioSeleccion {
   padding: 10px;
   margin: 0 auto;
 }
 
-/* line 131, ../sass/screen.scss */
-.footer {
-  max-width: auto;
-  margin: 0 auto;
-  padding: 10px;
-}
-
-/* line 137, ../sass/screen.scss */
-.footer .logo {
-  max-height: 100px;
-  margin: 0 auto;
-}
-
-/* line 142, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 .modalLogin {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -214,20 +239,12 @@ textarea {
   border-radius: 0px;
 }
 
-/* line 146, ../sass/screen.scss */
-.tituloPagina {
-  font-family: "Allura", cursive;
-  color: #f55f2a !important;
-  font-size: 30px;
-  font-weight: 400;
-}
-
-/* line 153, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 .separate {
   height: 10px;
 }
 
-/* line 159, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 .homeImage {
   background-image: url(../../static/img/cocina.gif);
   height: 600px;
@@ -235,7 +252,7 @@ textarea {
   z-index: 1;
 }
 
-/* line 167, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 .homeFormulario {
   position: absolute;
   z-index: 1000;
@@ -243,57 +260,45 @@ textarea {
   left: 15%;
 }
 
-/* line 174, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .titleOfHome {
   font-size: 40px;
   padding-bottom: 10px;
   color: #ccccc;
 }
 
-/* line 182, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 #registroComercio h1 {
   padding-top: 25px;
   padding-bottom: 10px;
   color: #ccccc;
 }
-/* line 187, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 #registroComercio h2 {
   padding-bottom: 10px;
   font-size: 25px;
 }
-/* line 191, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 #registroComercio li {
   list-style-type: circle;
   line-height: 20px;
 }
-/* line 195, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 #registroComercio p {
   line-height: 28px;
 }
-/* line 198, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 #registroComercio label {
   padding-bottom: 10px;
 }
-/* line 201, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 #registroComercio .barraImagen {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center bottom;
   min-height: 100px;
-  background-image: url(../../static/img/banner2.jpg);
+  background-image: url(../../static/img/guglieri-speciale.jpg);
 }
 
-/* line 212, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 #contacto .genteBar {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center bottom;
   min-height: 100px;
-  background-image: url(../../static/img/banner1.jpg);
+  background-image: url(../../static/img/naranjas.png);
 }
