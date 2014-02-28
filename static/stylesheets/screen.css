@@ -229,11 +229,7 @@ textarea {
 
 /* line 159, ../sass/screen.scss */
 .homeImage {
-  background-image: url(../../static/img/fondo.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-image: url(../../static/img/cocina.gif);
   height: 600px;
   position: relative;
   z-index: 1;

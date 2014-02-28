@@ -157,8 +157,8 @@ textarea {
 
 //Home
 .homeImage{
-	background-image: url(../../static/img/fondo.jpg);
-	@include background-size(cover);
+	background-image: url(../../static/img/cocina.gif);
+	//@include background-size(cover);
 	height: 600px;
 	position:relative;
 	z-index: 1;
