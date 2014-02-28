@@ -274,37 +274,42 @@ textarea {
   color: #ccccc;
 }
 
-/* line 200, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
+.tipografiaIndexTextoDebajo {
+  font-family: "Hammersmith One", sans-serif;
+}
+
+/* line 204, ../sass/screen.scss */
 #registroComercio h1 {
   padding-top: 25px;
   padding-bottom: 10px;
   color: #ccccc;
 }
-/* line 205, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 #registroComercio h2 {
   padding-bottom: 10px;
   font-size: 25px;
 }
-/* line 209, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 #registroComercio li {
   list-style-type: circle;
   line-height: 20px;
 }
-/* line 213, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 #registroComercio p {
   line-height: 28px;
 }
-/* line 216, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 #registroComercio label {
   padding-bottom: 10px;
 }
-/* line 219, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 #registroComercio .barraImagen {
   min-height: 100px;
   background-image: url(../../static/img/guglieri-speciale.jpg);
 }
 
-/* line 227, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 #contacto .genteBar {
   min-height: 100px;
   background-image: url(../../static/img/naranjas.png);
