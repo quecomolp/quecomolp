@@ -89,7 +89,7 @@ nav {
 		font-size: 18px;
 	}
 	& .tituloPagina {
-		font-family: $tipografiaTituloPrincipal !important;
+		font-family: $tipografiaTituloMarca !important;
 		color: $colorTituloPagina !important;
 		font-size: $tamanoTitulo;
 		font-weight: $pesoTituloPagina;
@@ -115,6 +115,12 @@ footer {
 	& a {
 		font-family: $tipografiaBarraNavegacion;
 		font-size: 18px;
+	}
+	& .tituloPagina {
+		font-family: $tipografiaTituloMarca !important;
+		color: $colorTituloPagina !important;
+		font-size: $tamanoTitulo;
+		font-weight: $pesoTituloPagina;
 	}
 }
 
