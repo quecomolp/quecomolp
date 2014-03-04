@@ -32,15 +32,14 @@ class DatosRestaurante (models.Model):
 	"""
 	Datos que conciernen al restaurante
 	"""
-
 	#listado de Categorias
 	categorias = (
-		('nivel1', 'una'),
-		('nivel2', 'dos'),
-		('nivel3', 'tres'),
-		('nivel4', 'cuatro'),
-		('nivel5', 'cinco'),
-		('nivel6', 'seis'),
+		('nivel1', 'una estrella'),
+		('nivel2', 'dos estrellas'),
+		('nivel3', 'tres estrellas'),
+		('nivel4', 'cuatro estrellas'),
+		('nivel5', 'cinco estrellas'),
+		('nivel6', 'seis estrellas'),
 		)
 
 	nombre = models.CharField ( max_length = 250 )
@@ -55,8 +54,9 @@ class DatosRestaurante (models.Model):
 	zonaEntrega = models.TextField()
 	informacionResturante = models.TextField()
 	diasLaboralesyHorarios = models.TextField()
-	categoriaRestaurante = models.CharField ( max_length = 6, choices = categorias, default = 'nivel1' )
+	categoriaRestaurante = models.CharField ( max_length = 16, choices = categorias, default = 'nivel1' )
 	tipoDeComidas = models.ForeignKey ( tipoComidas )
+	datosMenu = models.ForeignKey (menu)
 	class Meta:
 		ordering = ['nombre']
 	def __unicode__ (self):
@@ -87,7 +87,7 @@ class ImagenComida (models.Model):
 	Imagen de cada una de las comidas que forman parte del menu
 	"""
 	property = models.ForeignKey(menu)
-	imagenComida = models.FileField(upload_to='comidas/%m', blank = True)
+	imagenComida = models.FileField(upload_to='comidas/%m', blank = True, null = True)
 
 	class Admin:
 		pass
